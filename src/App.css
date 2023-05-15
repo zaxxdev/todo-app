@@ -1,0 +1,58 @@
+.list-group-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.task {
+  position: relative;
+  padding-right: 40px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+.task.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+.form-control {
+  padding-right: 40px;
+}
+.close {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #dc3545;
+  cursor: pointer;
+}
+.task-delete-button {
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 10px);
+  transform: translateY(-50%);
+}
+.close:hover {
+  color: #bd2130;
+}
+.input-group {
+  transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.list-group-item {
+  padding: 0.9em!important;
+    margin: 0px 0px 34px;
+  transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+.input-group,
+.list-group-item {
+  border: 1px solid #007eff4a!important;
+  border-radius: 5px;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.input-group:focus-within,
+.list-group-item:hover {
+  border-color: #007bff;
+}
+.form-control,
+.list-group {
+  transition: height 0.2s ease-in-out;
+}
